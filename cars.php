@@ -33,7 +33,7 @@ echo "Граница города 2 между $city2Border1 км и $city2Borde
 
 for ($j = 1; $j < count($cars); $j++) {
     $carDistance = $cars[$j];
-    if ($carDistance < $city1Border1 || $carDistance > $city1Border2 && $carDistance < $city2Border1 || $carDistance > $city2Border2) {
+    if ($carDistance < $city1Border1 || $carDistance > $city1Border2 || $carDistance < $city2Border1 || $carDistance > $city2Border2) {
         echo "Машина $j едет за городом на $carDistance км со скоростью не более 90 <br />";
     } else {
         echo "Машина $j едет по городу на $carDistance км со скоростью не более 70 <br />";
